@@ -1,0 +1,12 @@
+.hero {
+    &__info {
+        &__title {
+            @include font(normal, 600, 64px, 85px);
+            color: #212121;
+        }
+        &__text {
+            @include font(normal, 400, 18px, 36px);
+            color: #747474;
+        }
+    }
+}

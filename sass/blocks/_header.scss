@@ -1,3 +1,38 @@
 .header {
     width: 100%;
+    &__nav {
+        @include flex(row, space-between, center);
+        padding: 25px 0 75px;
+        &__list {
+            position: relative;
+            right: calc(14%);
+            @include flex(row, space-between, center);
+            width: 30%;
+            @extend %list-unstyled;
+        }
+        &__item {
+            text-shadow: none;
+        }
+        &__link {
+            @extend %link-unstyled;
+            @include font(normal, 400, 18px, 27px);
+            transition: all 0.3s ease;
+            &:hover {
+                color: #2D76F9;
+                font-weight: 700;
+            }
+        }
+        &__btn {
+            @extend %link-unstyled;
+            @include font(normal, 400, 18px, 27px);
+            color: #2D76F9;
+            padding: 12px 40px;
+            border: 1.5px solid #2D76F9;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            &:hover {
+                color: #0b1d3f96;
+            }
+        }
+    }
 }
