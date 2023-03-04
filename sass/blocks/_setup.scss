@@ -1,0 +1,25 @@
+.setup {
+    margin-top: 150px;
+    padding-bottom: 150px;
+    &__inner {
+        @include flex(row, space-between, center);
+    }
+    &__banner {
+        position: relative;
+        left: -100px;
+        max-width: 700px;
+        background-image: url(../../images/Rectangle.png);
+    }
+    &__info {
+        &__title {
+            @include font(normal, 600, 36px, 65px);
+            color: #212121;
+        }
+        &__text {
+            @include font(normal, 400, 18px, 36px);
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+        }
+    }
+}
