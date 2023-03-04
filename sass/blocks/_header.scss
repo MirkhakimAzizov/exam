@@ -5,7 +5,7 @@
         padding: 25px 0 75px;
         &__list {
             position: relative;
-            right: calc(14%);
+            right: calc(18%);
             @include flex(row, space-between, center);
             width: 30%;
             @extend %list-unstyled;
