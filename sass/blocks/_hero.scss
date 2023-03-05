@@ -278,10 +278,12 @@
         }
         &__bg {
             // display: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
             position: relative;
             &::after {
                 position: absolute;
-                top: 800px;
+                // top: 800px;
                 z-index: -2;
                 // right: 0px;
                 // left: -100px;
@@ -293,7 +295,7 @@
                 background-image: url(../../images/Rectangle02.png);
                 background-repeat: no-repeat;
                 background-size: 100% 730px;
-                // display: none;
+                display: none;
             }
             &::before {
                 position: absolute;

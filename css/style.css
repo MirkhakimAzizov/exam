@@ -879,11 +879,12 @@ img {
     padding: 0;
   }
   .hero__bg {
+    padding-bottom: 0;
+    margin-bottom: 0;
     position: relative;
   }
   .hero__bg::after {
     position: absolute;
-    top: 800px;
     z-index: -2;
     content: "";
     width: 100%;
@@ -892,6 +893,7 @@ img {
     background-image: url(../../images/Rectangle02.png);
     background-repeat: no-repeat;
     background-size: 100% 730px;
+    display: none;
   }
   .hero__bg::before {
     position: absolute;
