@@ -440,6 +440,9 @@ img {
 }
 .header {
   width: 100%;
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 10;
 }
 .header__inner {
   display: flex;
@@ -452,7 +455,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0 75px;
+  padding: 25px 0 25px;
 }
 .header__nav__list {
   position: relative;
@@ -514,7 +517,7 @@ img {
     width: 100%;
   }
   .header__nav {
-    padding: 32px 0 82px;
+    padding: 32px 0 25px;
   }
   .header__nav__list {
     display: none;
@@ -530,6 +533,7 @@ img {
   }
 }
 .hero__inner {
+  padding-top: 50px;
   padding-bottom: 240px;
   display: flex;
   flex-direction: row;
@@ -886,6 +890,7 @@ img {
     height: 100%;
     display: block;
     background-image: url(../../images/Hero_bg.png);
+    display: none;
   }
   .hero__bg::before {
     position: absolute;

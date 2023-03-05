@@ -1,5 +1,6 @@
 .hero {
     &__inner {
+        padding-top: 50px;
         padding-bottom: 240px;
         @include flex(row, space-between, center);
     }
@@ -289,7 +290,7 @@
                 display: block;
                 background-image: url(../../images/Hero_bg.png);
                 // background-repeat: no-repeat;
-                // display: none;
+                display: none;
             }
             &::before {
                 position: absolute;
