@@ -280,7 +280,7 @@
             position: relative;
             &::after {
                 position: absolute;
-                top: 780px;
+                top: 700px;
                 z-index: -2;
                 // right: 0px;
                 // left: -100px;
@@ -290,7 +290,7 @@
                 display: block;
                 background-image: url(../../images/Hero_bg.png);
                 // background-repeat: no-repeat;
-                display: none;
+                // display: none;
             }
             &::before {
                 position: absolute;

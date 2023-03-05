@@ -883,14 +883,13 @@ img {
   }
   .hero__bg::after {
     position: absolute;
-    top: 780px;
+    top: 700px;
     z-index: -2;
     content: "";
     width: 100%;
     height: 100%;
     display: block;
     background-image: url(../../images/Hero_bg.png);
-    display: none;
   }
   .hero__bg::before {
     position: absolute;
