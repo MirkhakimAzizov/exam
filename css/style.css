@@ -883,7 +883,7 @@ img {
   }
   .hero__bg::after {
     position: absolute;
-    top: 750px;
+    top: 800px;
     z-index: -2;
     content: "";
     width: 100%;
