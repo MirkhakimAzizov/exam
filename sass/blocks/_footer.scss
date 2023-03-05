@@ -16,19 +16,49 @@
     &__list {
         margin: 0;
         padding: 0;
+        // list-style: circle rgb(18, 157, 46);
+        list-style-image: url();
         &-title {
+            position: relative;
+            right: 20px;
             text-align: center;
             display: block;
-            @include font(normal, 600, 24px, 36px);
+            @include font(normal,
+            600,
+            24px,
+            36px);
             color: #000000;
             margin-bottom: 60px;
         }
         &-link {
-            @include font(normal, 400, 18px, 36px);
+            @include font(normal,
+            400,
+            18px,
+            36px);
             color: #747474;
             @extend %link-unstyled;
             padding: 0;
             margin: 0;
+            transition: all 0.3s ease;
+            &:hover {
+                color: #88888886;
+            }
+        }
+        &-icon {
+            color: #2D76F9;
+            transition: all 0.3s ease;
+            &:hover {
+                color: #2d74f98e;
+            }
+        }
+    }
+    &__item {
+        &__btn {
+            @include flex(row,
+            space-between,
+            center);
+            gap: 35px;
+            margin-bottom: 62px;
         }
     }
 }

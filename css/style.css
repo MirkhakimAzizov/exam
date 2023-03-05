@@ -382,7 +382,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: black;
+  color: #212121;
   background-color: white;
 }
 
@@ -780,6 +780,82 @@ img {
   color: rgba(45, 116, 249, 0.6862745098);
 }
 
+.about {
+  padding: 150px 0;
+}
+.about__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__banner {
+  padding-right: 50px;
+  max-width: 700px;
+  position: relative;
+  left: -100px;
+  background-image: url(../../images/bg.png);
+  background-repeat: no-repeat;
+}
+.about__info {
+  max-width: 500px;
+}
+.about__info__btn {
+  margin-top: 60px;
+  margin-right: 35px;
+  background: none;
+  border: none;
+}
+.about__info__btn:hover {
+  background-color: rgba(33, 33, 33, 0.1882352941);
+  border-radius: 25px;
+}
+.about__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 65px;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+}
+.about__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+}
+.about__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+.about__user__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.about__user__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #747474;
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   width: 100%;
   padding: 75px 0 135px;
@@ -804,8 +880,11 @@ img {
 .footer__list {
   margin: 0;
   padding: 0;
+  list-style-image: url();
 }
 .footer__list-title {
+  position: relative;
+  right: 20px;
   text-align: center;
   display: block;
   font-style: normal;
@@ -823,4 +902,23 @@ img {
   color: #747474;
   padding: 0;
   margin: 0;
+  transition: all 0.3s ease;
+}
+.footer__list-link:hover {
+  color: rgba(136, 136, 136, 0.5254901961);
+}
+.footer__list-icon {
+  color: #2D76F9;
+  transition: all 0.3s ease;
+}
+.footer__list-icon:hover {
+  color: rgba(45, 116, 249, 0.5568627451);
+}
+.footer__item__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 62px;
 }/*# sourceMappingURL=style.css.map */
