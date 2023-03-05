@@ -55,3 +55,66 @@
         }
     }
 }
+
+@media only screen and (max-width:414px) {
+    .about {
+        padding: 150px 0;
+        &__inner {
+            @include flex(row, space-between, center);
+        }
+        &__banner {
+            padding-right: 50px;
+            max-width: 700px;
+            position: relative;
+            left: -100px;
+            background-image: url(../../images/bg.png);
+            background-repeat: no-repeat;
+            display: none;
+        }
+        &__info {
+            max-width: 500px;
+            &__btn {
+                position: relative;
+                left: calc(50% - 60px);
+                margin-top: 60px;
+                margin-right: 35px;
+                background: none;
+                border: none;
+                &:hover {
+                    background-color: #21212130;
+                    border-radius: 25px;
+                }
+            }
+        }
+        &__title {
+            @include font(normal, 600, 36px, 65px);
+            color: #212121;
+            margin: 0;
+            padding: 0;
+        }
+        &__text {
+            @include font(normal, 400, 18px, 36px);
+            color: #212121;
+            margin: 0;
+            padding: 0;
+        }
+        &__user {
+            @include flex(row, start, center);
+            gap: 30px;
+            margin: 50px 0;
+            &__title {
+                @include font(normal, 600, 18px, 27px);
+                color: #212121;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+            &__text {
+                @include font(normal, 400, 14px, 21px);
+                color: #747474;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

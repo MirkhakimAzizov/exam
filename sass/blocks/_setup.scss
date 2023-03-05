@@ -23,3 +23,31 @@
         }
     }
 }
+
+@media only screen and (max-width:414px) {
+    .setup {
+        margin-top: 50px;
+        padding-bottom: 0px;
+        &__inner {
+            @include flex(column, space-between, center);
+        }
+        &__banner {
+            position: relative;
+            left: 00px;
+            max-width: 700px;
+            background-image: url(../../images/Rectangle.png);
+        }
+        &__info {
+            &__title {
+                @include font(normal, 600, 24px, 40px);
+                color: #212121;
+            }
+            &__text {
+                @include font(normal, 400, 18px, 36px);
+                margin: 0;
+                padding: 0;
+                margin-top: 25px;
+            }
+        }
+    }
+}

@@ -1,5 +1,8 @@
 .header {
     width: 100%;
+    &__inner {
+        @include flex(row, space-between, center);
+    }
     &__nav {
         @include flex(row, space-between, center);
         padding: 25px 0 75px;
@@ -33,6 +36,40 @@
             &:hover {
                 color: #0b1d3f96;
             }
+        }
+    }
+    &__menu {
+        @include flex(column, space-between, center);
+        display: none;
+        width: 50px;
+        height: 50px;
+        padding: 16px 12px;
+        border: 1.5px solid #2D76F9;
+        border-radius: 5px;
+        &-line {
+            width: 26px;
+            height: 2px;
+            background-color: #2D76F9;
+        }
+    }
+}
+
+// --------------------------------------------------- 414px
+@media only screen and (max-width:992px) {
+    .header {
+        width: 100%;
+        &__nav {
+            padding: 32px 0 82px;
+            &__list {
+                display: none;
+            }
+            &__btn {
+                display: none;
+            }
+        }
+        &__menu {
+            @include flex(column, space-between, center);
+            // display: none;
         }
     }
 }

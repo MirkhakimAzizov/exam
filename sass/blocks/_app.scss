@@ -22,3 +22,32 @@
         background-image: url(../../images/Rectangle2.png);
     }
 }
+
+@media only screen and (max-width:414px) {
+    .app {
+        padding-bottom: 50px;
+        &__inner {
+            @include flex(column, space-between, center);
+        }
+        &__info {
+            &__title {
+                @include font(normal, 600, 24px, 40px);
+                color: #212121;
+                margin-bottom: 15px;
+            }
+            &__text {
+                @include font(normal, 400, 18px, 36px);
+                color: #747474;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        &__banner {
+            margin-top: 50px;
+            overflow-x: hidden;
+            position: relative;
+            right: 0px;
+            background-image: url(../../images/Rectangle2.png);
+        }
+    }
+}

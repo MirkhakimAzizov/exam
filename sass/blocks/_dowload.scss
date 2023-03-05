@@ -44,3 +44,52 @@
         }
     }
 }
+
+@media only screen and (max-width: 414px) {
+    .dowload {
+        &__inner {
+            padding: 50px 35px;
+            background: #2D76F9;
+            border-radius: 50px;
+            background-image: url(../../images/Mask.png);
+        }
+        &__text {
+            @include font(normal, 600, 24px, 36px);
+            text-align: center;
+            color: #FFFFFF;
+            padding: 0;
+            margin: 0;
+        }
+        &__btn {
+            padding-top: 50px;
+            @include flex(column, center, center);
+            gap: 25px;
+            &-link1 {
+                @include font(normal, 500, 18px, 27px);
+                color: #2D76F9;
+                @extend %link-unstyled;
+                padding: 24px 58px;
+                background: #FFFFFF;
+                border-radius: 1500px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background: #ffffffab;
+                }
+            }
+            &-link2 {
+                @include font(normal, 500, 18px, 27px);
+                color: #FFFFFF;
+                @extend %link-unstyled;
+                padding: 24px 76px;
+                background: #2D76F9;
+                border: 1.5px solid #FFFFFF;
+                border-radius: 1500px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background: #ffffffab;
+                    color: #2d74f9af;
+                }
+            }
+        }
+    }
+}
