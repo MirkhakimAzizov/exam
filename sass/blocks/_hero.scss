@@ -277,10 +277,11 @@
             }
         }
         &__bg {
+            // display: none;
             position: relative;
             &::after {
                 position: absolute;
-                top: 700px;
+                top: 730px;
                 z-index: -2;
                 // right: 0px;
                 // left: -100px;
@@ -288,8 +289,10 @@
                 width: 100%;
                 height: 100%;
                 display: block;
-                background-image: url(../../images/Hero_bg.png);
-                // background-repeat: no-repeat;
+                // background-image: url(../../images/Hero_bg.png);
+                background-image: url(../../images/Rectangle02.png);
+                background-repeat: no-repeat;
+                background-size: 100% 730px;
                 // display: none;
             }
             &::before {
@@ -303,7 +306,7 @@
                 display: block;
                 background-image: url(../../images/Mask.svg);
                 background-repeat: no-repeat;
-                // display: none;
+                display: none;
             }
         }
     }
